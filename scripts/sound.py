@@ -4,7 +4,7 @@
 Usage: script.py [-i input]
 
 Options:
--i input  input file [default: data/km3net_jul13_90m_muatm10T1.km3_v5r1.evt]
+-i input  input file [default: ../data/km3net_jul13_90m_muatm10T1.km3_v5r1.evt]
 """
 
 import docopt
