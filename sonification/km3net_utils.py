@@ -20,8 +20,8 @@ class Event(object):
         return sorted(zip(self.time_list, self.pmt_id_list), key=lambda x: x[0])
 
     def __len__(self):
-        if len(self.pmt_id_list) == len(self.time_list):
-            print("ERROR: inconsitent data")
+        if len(self.pmt_id_list) != len(self.time_list):
+            print("ERROR: inconsistent data")
             sys.exit(-1)
         return len(self.pmt_id_list)
 
