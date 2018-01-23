@@ -26,7 +26,7 @@ for event in km3.EvtFile(arguments["-i"]):
     sample = []
     counter += 1
 
-    print(counter, "number of hits: ", event.__len__())
+    print(counter, "number of hits: ", len(event))
     event.sort_by_time()
     old_time = 0
     for time, pmt_id in zip(event.time_list, event.pmt_id_list):
